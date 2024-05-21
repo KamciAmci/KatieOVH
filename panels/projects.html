@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,html {
+            overflow: auto;
+            height: 1200px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main {
+            background-color: transparent;
+            width: 100%;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .project1pool {
+            position: absolute;
+            margin: 10px;
+            max-width: 1200px;
+            width: 100%;
+            background-color: #333;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            color: aliceblue;
+            display:inline-flex;
+            align-items: stretch;
+            overflow: hidden;
+            background-image: url(../src/image.png);
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: 320px;
+        }
+
+        .project2pool {
+            margin-top: 100px;
+            margin-bottom:60px ;
+            position: absolute;
+            transform: translate(0px,500px);
+            height: 474px;
+            max-width: 1200px;
+            width: 100%;
+            background-color: #333;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            color: aliceblue;
+            display:inline-flex;
+            align-items: stretch;
+            overflow: hidden;
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: 320px;
+        }
+        .preview-image {
+            flex: 0 0 300px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        .content {
+            flex: 1;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .proj1title {
+            font-size: 50px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .proj1d {
+            font-size: 20px;
+            text-align: left;
+            margin-bottom: 20px;
+            flex: 1;
+        }
+        .proj2d {
+            height: 161px;
+            width: 840px;
+            font-size: 20px;
+            text-align: left;
+            margin-bottom: 20px;
+            flex: 1;
+        }
+        .specs {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .spec {
+            flex: 1 1 30%;
+            margin: 10px;
+        }
+        .spec h1 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .spec ul {
+            list-style-type: none;
+        }
+        .spec li {
+            font-size: 20px;
+        }
+        .movement {
+            position: absolute;
+            height: 1px;
+            width: 1px;
+            transform: translate(0px,1200px);
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+    <div class="project1pool">
+        <div class="preview-image"></div>
+        <div class="content">
+            <div class="proj1title">Katie Pico 1 - Concept</div>
+            <div class="proj1d">
+                Intel Atom based small form factor server. 2x10Gbe ports. 
+                1 for no password authentication remote control and PoE power source, 
+                1 for internet and standard authentication method remote control.
+                4GB/8GB/16GB/32GB LPDDR4 2400MHz DRAM module. No usb, audio, graphic ports.
+                Preinstalled ssh no password client for control port ethernet. 100GB/500GB/1TB 7GB/s or Lan PXE support.
+                Supported OS's: Linux ubuntu server x86, Microsoft Windows server x86
+            </div>
+            <div class="specs">
+                <div class="spec">
+                    <h1>Network</h1>
+                    <ul>
+                        <li>10Gb Dual ethernet</li>
+                    </ul>
+                </div>
+                <div class="spec">
+                    <h1>CPU</h1>
+                    <ul>
+                        <li>Intel Atom® Processor C3955</li>
+                    </ul>
+                </div>
+                <div class="spec">
+                    <h1>GPU</h1>
+                    <ul>
+                        <li>Intel Atom® Integrated graphics</li>
+                    </ul>
+                </div>
+                <div class="spec">
+                    <h1>RAM</h1>
+                    <ul>
+                        <li>8GB/16GB/32GB LPDDR4</li>
+                    </ul>
+                </div>
+                <div class="spec">
+                    <h1>Rack Mount</h1>
+                    <ul>
+                        <li>Yes</li>
+                    </ul>
+                </div>
+                <div class="spec">
+                    <h1>Nand Drive</h1>
+                    <ul>
+                        <li>100GB/500GB/1TB NVME</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="project2pool">
+        <div class="preview-image"></div>
+        <div class="content">
+            <div class="proj1title">Katie Pico 2 - Concept</div>
+            <div class="proj2d">
+                Cluster Testing
+            </div>
+            <div class="specs">
+                <div class="spec">
+                    <h1>Network</h1>
+                    <ul>
+                        <li>Cluster Testing</li>
+                    </ul>
+                </div>
+                <div class="spec">
+                    <h1>CPU</h1>
+                    <ul>
+                        <li>Cluster Testing</li>
+                    </ul>
+                </div>
+                <div class="spec">
+                    <h1>GPU</h1>
+                    <ul>
+                        <li>Cluster Testing</li>
+                    </ul>
+                </div>
+                <div class="spec">
+                    <h1>RAM</h1>
+                    <ul>
+                        <li>Cluster Testing</li>
+                    </ul>
+                </div>
+                <div class="spec">
+                    <h1>Rack Mount</h1>
+                    <ul>
+                        <li>Cluster Testing</li>
+                    </ul>
+                </div>
+                <div class="spec">
+                    <h1>Nand Drive</h1>
+                    <ul>
+                        <li>Cluster Testing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="movement"></div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katie | Main Page</title>
+    <script defer src="/src/script.js"></script>
+    <style>
+        * {
+            z-index: 3;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #2c2c2c;
+        }
+
+        header {
+            z-index: 1000;
+            height: 80px;
+            background-color: #333;
+            overflow: hidden;
+            width: 100%;
+            position: fixed;
+            top: 0;
+        }
+
+        .hbuttons {
+            width: calc(100% - 80px);
+            height: 100%;
+            background-color: transparent;
+            float: left;
+        }
+
+        .hbutton {
+            color: aliceblue;
+            font-size: 20px;
+            width: 120px;
+            margin: 10px;
+            float: left;
+            border: none;
+            height: 60px;
+            transition: 0.1s ease-in-out;
+            background: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .hbutton:hover {
+            color: #ccc;
+        }
+
+        #home {
+            margin-left: 20px;
+        }
+
+        .main {
+            flex: 1;
+            width: 100%;
+            padding-top: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .logo {
+            float: left;
+            height: 60px;
+            width: 60px;
+            margin: 10px;
+            background-size: 60px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url(/src/faviconb.svg);
+        }
+
+        footer {
+            
+            width: 100%;
+            background-color: #2c2c2c;
+            color: white;
+            text-align: center;
+            padding: 0px;
+        }
+
+        footer p {
+            margin-top: 0px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hbuttons">
+            <div class="logo"></div>
+            <button id="home" class="hbutton">Home</button>
+            <button id="about" class="hbutton">About</button>
+            <button id="projects" class="hbutton">Projects</button>
+            <button id="contact" class="hbutton">Contact</button>
+            <button id="login" onclick="window.location.href='login.php'" class="hbutton">Login</button>
+        </div>
+    </header>
+    <main class="main">
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Katie. All rights reserved.</p>
+        <p>Contact us at Noreply@Katie.ovh</p>
+    </footer>
+</body>
+</html>
